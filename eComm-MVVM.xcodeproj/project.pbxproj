@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		714141F829EF2DE000A6AD76 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 714141F729EF2DE000A6AD76 /* Kingfisher */; };
 		714141FA29EF2E0200A6AD76 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714141F929EF2E0200A6AD76 /* UIImageView+Extension.swift */; };
+		714141FE29EF41C900A6AD76 /* EndpointType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714141FD29EF41C900A6AD76 /* EndpointType.swift */; };
 		714E1D7D29EC870100D436C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714E1D7C29EC870100D436C5 /* AppDelegate.swift */; };
 		714E1D7F29EC870100D436C5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714E1D7E29EC870100D436C5 /* SceneDelegate.swift */; };
 		714E1D8629EC870300D436C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 714E1D8529EC870300D436C5 /* Assets.xcassets */; };
@@ -25,6 +26,7 @@
 
 /* Begin PBXFileReference section */
 		714141F929EF2E0200A6AD76 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
+		714141FD29EF41C900A6AD76 /* EndpointType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointType.swift; sourceTree = "<group>"; };
 		714E1D7929EC870100D436C5 /* eComm-MVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "eComm-MVVM.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		714E1D7C29EC870100D436C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		714E1D7E29EC870100D436C5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,6 +63,14 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
+		714141FC29EF41B300A6AD76 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				714141FD29EF41C900A6AD76 /* EndpointType.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
 		714E1D7029EC870100D436C5 = {
 			isa = PBXGroup;
 			children = (
@@ -80,6 +90,7 @@
 		714E1D7B29EC870100D436C5 /* eComm-MVVM */ = {
 			isa = PBXGroup;
 			children = (
+				714141FC29EF41B300A6AD76 /* Utility */,
 				714E1D9029EC9DAE00D436C5 /* Application */,
 				714E1D9329EC9DBF00D436C5 /* Constants */,
 				714E1D9229EC9DBC00D436C5 /* Extensions */,
@@ -264,6 +275,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				714141FE29EF41C900A6AD76 /* EndpointType.swift in Sources */,
 				71DA126F29EDE7380054A64A /* APIManager.swift in Sources */,
 				714E1D7D29EC870100D436C5 /* AppDelegate.swift in Sources */,
 				71DA127829EDF09C0054A64A /* ProductListViewController.swift in Sources */,

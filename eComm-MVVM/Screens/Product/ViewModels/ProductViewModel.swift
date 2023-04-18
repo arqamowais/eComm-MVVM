@@ -14,10 +14,11 @@ final class ProductViewModel {
     
     func fetchProducts() {
         eventHandler?(.loading)
-        APIManager.shared.fetchProducts { [weak self] resposne in
-            guard let self else {
-                return
-            }
+        
+        APIManager.shared.request(modelType: [Product].self, endpointType: EndpointItem.products) { [weak self] resposne in
+                guard let self else {
+                    return
+                }
             self.eventHandler?(.stopLoading)
             switch resposne {
             case .success(let products):
@@ -27,6 +28,7 @@ final class ProductViewModel {
                 self.eventHandler?(.error(error))
             }
         }
+
     }
     
 }

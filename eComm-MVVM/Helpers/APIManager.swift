@@ -12,9 +12,10 @@ enum DataError: Error {
     case invalidData
     case invalidDecoding
     case network(Error?)
+    case invalidURL
 }
 
-typealias Handler = (Result<[Product], DataError>) -> ()
+typealias Handler<T> = (Result<T, DataError>) -> ()
 
 final class APIManager {
    
@@ -24,8 +25,9 @@ final class APIManager {
         
     }
     
-    func fetchProducts(completion: @escaping Handler) {
-        guard let url = URL(string: Constant.API.productURL) else {
+    func request<T: Decodable>(modelType: T.Type, endpointType: EndpointType, completion: @escaping Handler<T>) {
+        guard let url = endpointType.url else {
+            completion(.failure(.invalidURL))
             return
         }
         
@@ -40,8 +42,8 @@ final class APIManager {
                 return
             }
             do {
-                let products = try JSONDecoder().decode([Product].self, from: data)
-                completion(.success(products))
+                let result = try JSONDecoder().decode(modelType, from: data)
+                completion(.success(result))
             } catch (let error) {
                 completion(.failure(.network(error)))
             }
