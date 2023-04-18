@@ -10,6 +10,8 @@ import UIKit
 
 final class ProductCell: UITableViewCell {
     
+    // MARK: - IBOutlets
+    
     @IBOutlet private var productBackgroundView: UIView!
     @IBOutlet private var productImageView: UIImageView!
     @IBOutlet private var productTitleLabel: UILabel!
@@ -17,6 +19,8 @@ final class ProductCell: UITableViewCell {
     @IBOutlet private var descriptionLabel: UILabel!
     @IBOutlet private var priceLabel: UILabel!
     @IBOutlet private var rateButton: UIButton!
+    
+    // MARK: - Variables
     
     var product: Product? {
         didSet {
@@ -26,6 +30,14 @@ final class ProductCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
+        
+        self.selectionStyle = .none
+        
+        productBackgroundView.clipsToBounds = false
+        productBackgroundView.layer.cornerRadius = 15
+        productBackgroundView.backgroundColor = .systemGray6
+        
+        productImageView.layer.cornerRadius = 10
     }
     
     private func productDetailConfiguration() {

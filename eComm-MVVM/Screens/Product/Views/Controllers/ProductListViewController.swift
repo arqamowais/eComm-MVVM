@@ -8,8 +8,13 @@
 import UIKit
 
 final class ProductListViewController: UIViewController {
-    
+
+    // MARK: - IBOutlets
+
     @IBOutlet private var productTableView: UITableView!
+    
+    // MARK: - Variables
+
     
     private var viewModel: ProductViewModel = ProductViewModel()
     

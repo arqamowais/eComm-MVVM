@@ -53,6 +53,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		714141FB29EF31DF00A6AD76 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				71DA127729EDF09C0054A64A /* ProductListViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		714E1D7029EC870100D436C5 = {
 			isa = PBXGroup;
 			children = (
@@ -163,9 +171,9 @@
 		714E1D9929EC9E6A00D436C5 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				71DA127729EDF09C0054A64A /* ProductListViewController.swift */,
 				71DA127B29EDF2480054A64A /* ProductCell.swift */,
 				71DA127D29EDF2830054A64A /* ProductCell.xib */,
+				714141FB29EF31DF00A6AD76 /* Controllers */,
 			);
 			path = Views;
 			sourceTree = "<group>";
