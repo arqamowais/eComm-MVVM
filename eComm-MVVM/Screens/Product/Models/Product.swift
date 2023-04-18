@@ -14,6 +14,7 @@ struct Product: Decodable {
     let description: String
     let category: String
     let image: String
+    let rating: Rate
 }
 
 struct Rate: Decodable {

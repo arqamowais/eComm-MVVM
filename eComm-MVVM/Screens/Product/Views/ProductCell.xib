@@ -55,7 +55,7 @@
                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="GLx-Z7-fkw">
                                     <rect key="frame" x="0.0" y="80.666666666666671" width="198.33333333333334" height="49.333333333333329"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qaA-kz-hjC">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qaA-kz-hjC">
                                             <rect key="frame" x="0.0" y="0.0" width="198.33333333333334" height="49.333333333333336"/>
                                             <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
                                             <color key="textColor" systemColor="secondaryLabelColor"/>
@@ -109,6 +109,15 @@
                 <constraint firstItem="vt9-hD-f00" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="fhE-LX-2zt"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="descriptionLabel" destination="qaA-kz-hjC" id="DWo-4S-ygS"/>
+                <outlet property="priceLabel" destination="hRs-SF-8t7" id="CZX-GP-oH6"/>
+                <outlet property="productBackgroundView" destination="vt9-hD-f00" id="HUB-Hu-u09"/>
+                <outlet property="productCategoryLabel" destination="4PA-VD-EfA" id="Tf1-1i-LYt"/>
+                <outlet property="productImageView" destination="BTB-l0-BtP" id="EDd-FV-zRC"/>
+                <outlet property="productTitleLabel" destination="Wom-cW-qCr" id="qga-4B-VOU"/>
+                <outlet property="rateButton" destination="xvU-fN-L26" id="fma-eu-oGZ"/>
+            </connections>
             <point key="canvasLocation" x="139.69465648854961" y="-54.225352112676056"/>
         </view>
     </objects>

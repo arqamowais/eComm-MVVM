@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		714141F829EF2DE000A6AD76 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 714141F729EF2DE000A6AD76 /* Kingfisher */; };
+		714141FA29EF2E0200A6AD76 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714141F929EF2E0200A6AD76 /* UIImageView+Extension.swift */; };
 		714E1D7D29EC870100D436C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714E1D7C29EC870100D436C5 /* AppDelegate.swift */; };
 		714E1D7F29EC870100D436C5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714E1D7E29EC870100D436C5 /* SceneDelegate.swift */; };
 		714E1D8629EC870300D436C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 714E1D8529EC870300D436C5 /* Assets.xcassets */; };
@@ -22,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		714141F929EF2E0200A6AD76 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
 		714E1D7929EC870100D436C5 /* eComm-MVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "eComm-MVVM.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		714E1D7C29EC870100D436C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		714E1D7E29EC870100D436C5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				714141F829EF2DE000A6AD76 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,6 +104,7 @@
 		714E1D9229EC9DBC00D436C5 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				714141F929EF2E0200A6AD76 /* UIImageView+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -189,6 +194,9 @@
 			dependencies = (
 			);
 			name = "eComm-MVVM";
+			packageProductDependencies = (
+				714141F729EF2DE000A6AD76 /* Kingfisher */,
+			);
 			productName = "eComm-MVVM";
 			productReference = 714E1D7929EC870100D436C5 /* eComm-MVVM.app */;
 			productType = "com.apple.product-type.application";
@@ -217,6 +225,9 @@
 				Base,
 			);
 			mainGroup = 714E1D7029EC870100D436C5;
+			packageReferences = (
+				714141F629EF2DE000A6AD76 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 714E1D7A29EC870100D436C5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -248,6 +259,7 @@
 				71DA126F29EDE7380054A64A /* APIManager.swift in Sources */,
 				714E1D7D29EC870100D436C5 /* AppDelegate.swift in Sources */,
 				71DA127829EDF09C0054A64A /* ProductListViewController.swift in Sources */,
+				714141FA29EF2E0200A6AD76 /* UIImageView+Extension.swift in Sources */,
 				71DA127329EDEBB50054A64A /* ProductViewModel.swift in Sources */,
 				71DA127129EDE78A0054A64A /* Constant.swift in Sources */,
 				71DA127C29EDF2480054A64A /* ProductCell.swift in Sources */,
@@ -460,6 +472,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		714141F629EF2DE000A6AD76 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		714141F729EF2DE000A6AD76 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 714141F629EF2DE000A6AD76 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 714E1D7129EC870100D436C5 /* Project object */;
 }
